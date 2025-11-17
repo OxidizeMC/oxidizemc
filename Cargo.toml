@@ -1,3 +1,14 @@
-[workspace]
-resolver = "2"
-members = ["oxidizemc", "bindings-fabric-loader"]
+[package]
+name = "oxidizemc"
+version = "0.0.0-dev.1"
+edition = "2024"
+authors = ["PitchBlackNights <pitchblacknights@proton.me>"]
+repository = "https://github.com/oxidizemc/oxidizemc"
+license = "MIT"
+readme = "../README.md"
+
+[dependencies]
+log = "0.4.28"
+
+[lib]
+crate-type = ["cdylib"]

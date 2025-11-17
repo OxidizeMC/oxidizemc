@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../bindings-fabric"
+		},
+		{
+			"path": "../form"
+		},
+		{
+			"path": "../java-oxide"
+		}
+	],
+    "settings": {}
+}

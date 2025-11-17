@@ -3,33 +3,6 @@
 version = 4
 
 [[package]]
-name = "java-spaghetti"
-version = "0.2.0"
-source = "git+https://github.com/Dirbaio/java-spaghetti?rev=cef9ce16773133fe3c44843b72717d4b678e9f6f#cef9ce16773133fe3c44843b72717d4b678e9f6f"
-dependencies = [
- "jni-sys",
-]
-
-[[package]]
-name = "jni-sys"
-version = "0.4.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "c30a312d782b8d56a1e0897d45c1af33f31f9b4a4d13d31207a8675e0223b818"
-dependencies = [
- "jni-sys-macros",
-]
-
-[[package]]
-name = "jni-sys-macros"
-version = "0.1.0"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "e6c199962dfd5610ced8eca382606e349f7940a4ac7d867b58a046123411cbb4"
-dependencies = [
- "quote",
- "syn",
-]
-
-[[package]]
 name = "log"
 version = "0.4.28"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -37,49 +10,7 @@ checksum = "34080505efa8e45a4b816c349525ebe327ceaa8559756f0356cba97ef3bf7432"
 
 [[package]]
 name = "oxidizemc"
-version = "0.0.0-dev1"
+version = "0.0.0-dev.1"
 dependencies = [
  "log",
 ]
-
-[[package]]
-name = "oxidizemc-bindings-fabric-loader"
-version = "0.0.0-dev1"
-dependencies = [
- "java-spaghetti",
-]
-
-[[package]]
-name = "proc-macro2"
-version = "1.0.103"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "5ee95bc4ef87b8d5ba32e8b7714ccc834865276eab0aed5c9958d00ec45f49e8"
-dependencies = [
- "unicode-ident",
-]
-
-[[package]]
-name = "quote"
-version = "1.0.41"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "ce25767e7b499d1b604768e7cde645d14cc8584231ea6b295e9c9eb22c02e1d1"
-dependencies = [
- "proc-macro2",
-]
-
-[[package]]
-name = "syn"
-version = "1.0.109"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "72b64191b275b66ffe2469e8af2c1cfe3bafa67b529ead792a6d0160888b4237"
-dependencies = [
- "proc-macro2",
- "quote",
- "unicode-ident",
-]
-
-[[package]]
-name = "unicode-ident"
-version = "1.0.20"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "462eeb75aeb73aea900253ce739c8e18a67423fadf006037cd3ff27e82748a06"
