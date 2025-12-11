@@ -6,8 +6,11 @@
 		{
 			"path": "../bindings-fabric"
 		},
-		{
-			"path": "../form"
+        {
+			"path": "../oxidizemc-fabric"
+		},
+        {
+			"path": "../oxidizemc-test-mod"
 		},
 		{
 			"path": "../java-oxide"
