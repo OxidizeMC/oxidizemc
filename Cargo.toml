@@ -1,14 +1,30 @@
 [package]
 name = "oxidizemc"
+description = ""
 version = "0.0.0-dev.1"
 edition = "2024"
 authors = ["PitchBlackNights <pitchblacknights@proton.me>"]
 repository = "https://github.com/oxidizemc/oxidizemc"
+documentation = "https://docs.rs/oxidizemc"
+keywords = ["java", "minecraft", "modding"]
+categories = ["development-tools"]
 license = "MIT"
 readme = "../README.md"
 
 [dependencies]
-log = "0.4.28"
+java-oxide = "0.1"
+oxidizemc-derive = { path = "./derive", optional = true }
+# oxidizemc-derive = { version = "0.1", optional = true }
 
-[lib]
-crate-type = ["cdylib"]
+[features]
+default = [
+    "derive",
+    "build",
+]
+default_no_derive = []
+derive = ["dep:oxidizemc-derive"]
+build = []
+
+[workspace]
+resolver = "2"
+members = ["derive"]

@@ -1,0 +1,20 @@
+[package]
+name = "oxidizemc-derive"
+description = "Procedural macros reexported by `oxidizemc`"
+version = "0.0.0-dev.1"
+edition = "2024"
+authors = ["PitchBlackNights <pitchblacknights@proton.me>"]
+repository = "https://github.com/oxidizemc/oxidizemc"
+documentation = "https://docs.rs/oxidizemc-derive"
+keywords = ["java", "minecraft", "modding"]
+categories = ["development-tools"]
+license = "MIT"
+readme = "../README.md"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+proc-macro2 = "1.0"
+syn = { version = "2.0", features = ["full"] }
+quote = "1.0"
