@@ -7,13 +7,16 @@
 			"path": "../bindings-fabric"
 		},
         {
-			"path": "../oxidizemc-fabric"
+			"path": "../oxidizemc-fabric",
 		},
         {
 			"path": "../oxidizemc-test-mod"
 		},
 		{
 			"path": "../java-oxide"
+		},
+        {
+			"path": "../java-oxide-gen"
 		}
 	],
     "settings": {}
